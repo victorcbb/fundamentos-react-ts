@@ -1,0 +1,132 @@
+.post {
+  background: var(--gray-800);
+  border-radius: .5rem;
+  padding: 2.5rem;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.content {
+  line-height: 1.6;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+}
+
+.content p {
+  margin-top: 1rem;
+}
+
+.content a {
+  font-weight: bold;
+  color: var(--green-500);
+  text-decoration: none;
+  transition: all .1s;
+}
+
+.content a:hover {
+  color: var(--green-300);
+}
+
+.post > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post > header time {
+  font-size: .875rem;
+  color: var(--gray-400);
+}
+
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: felx-start;
+  justify-content: space-between;
+}
+
+.authorInfo strong {
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.authorInfo span {
+  line-height: 1.6;
+  font-size: .875rem;
+  color: var(--gray-400);
+}
+
+.commentForm {
+  width: 100%;
+
+  margin-top: 2.4rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--gray-600);
+}
+
+.commentForm > strong {
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.commentForm textarea {
+  width: 100%;
+  height: 6rem;
+
+  padding: .8125rem 1rem;
+  margin-block: 1rem;
+
+  color: var(--gray-300);
+  line-height: 1.4;
+
+  background: var(--gray-900);
+  border: none;
+  border-radius: .5rem;
+  resize: none;
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+} 
+
+.commentForm footer button {
+  padding: 1rem 1.5rem;
+
+  background: var(--green-500);
+  border-radius: .5rem;
+  border: none;
+
+  color: var(--white);
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.commentForm footer button:not(:disabled):hover {
+  background: var(--green-300);
+}
+
+.commentForm footer button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.commentList {
+  margin-top: 2rem;
+}

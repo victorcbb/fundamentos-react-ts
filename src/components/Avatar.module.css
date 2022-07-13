@@ -1,0 +1,19 @@
+.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  object-fit: cover;
+
+  border-radius: .5rem;
+}
+
+.avatarWithBorder {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  object-fit: cover;
+
+  border-radius: .5rem;
+  border: .25rem solid var(--gray-600);
+  outline: .125rem solid var(--green-500);
+}
